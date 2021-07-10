@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Petdop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Petdop </title>
+    <link rel="shortcut icon" href="petdop.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  </head>
+ <body>
+   <div class="header">
+       <div class="header-right">
+         <img class="petdop" src="petdop.jpg" alt="Petdop" style="width: 30%; height: 50px;">
+       </div>
+       <div class="name"> <p class="logoname">Petdop</p></div>  
+         <div class="header-left">
+         <a href="index.html"> Home </a>
+         <a href="About.html"> About</a>
+         <a href="Blog.html"> Blogs</a>
+       </div>
+    </div>
+
+     <div id="categories"> </div>
+     
+     <footer>
+       <div class="Allfooter">
+          <div class="Foot">  
+            <br>
+           <p class="footer"> © 2021 Petdop, Inc.  |  Phone: 09093727215  |  Address: 50 Iron Point Circle, Suite 140, Foodum, CA 95630  <br />
+           Read our <a class="Privacy" href=""> Privacy Policy </a>  | Petdop <a class="Privacy" href=""> Terms of Service </a>  </p>
+         </div>
+
+        </div>
+      </footer>
+  
+
+   <script>
+     var text =[{ name: "Lucky", img: "Dog1.jpg", Price : "₦65,000", url: "1Lucky.html"},
+                { name: "Mr White", img: "Dog2.jpg", Price : "₦100,000", url: "2MrWhite.html"},
+                { name: "Slimy", img: "Dog3.jpg ", Price : "₦90,000", url: "3Slimy.html"},
+                { name: "Dee Dee", img: "Dog4.jpg", Price : "₦30,000", url:"4DeeDee.html" },
+                { name: "Doman", img: "Dog5.jpg", Price : "₦150,000", url:"5Doman.html" },
+                { name: "Great", img: "Dog6.jpg", Price : "₦35,000 ", url:"6Great.html" },
+                { name: "Rotfull", img: "Dog7.jpg", Price : "₦50,000", url:"7Rotull.html" },
+                { name: "Buller", img:  "Dog8.jpg", Price : "₦70,000", url:"8Buller.html" },
+                { name: "Accura", img: "Dog9.jpg", Price : "₦ 50,000", url:"9Accura.html" },
+                { name: "Smith", img: "Dog10.jpg", Price : "₦120,000", url:"10Smith.html" },
+                { name: "Black", img: "Dog11.jpg", Price : "₦45,000", url:"11Black.html" },
+                { name: "Dodge", img:  "Dog12.jpeg", Price : "₦30,000", url:"12Dodge.html" },
+                { name: "Mozzy", img: "Dog13.jpg", Price : "₦80,000", url:"13Mozzy.html" },
+                { name: "Tane", img: "Dog14.jpg", Price : "₦50,000", url:"14Tane.html" },
+                { name: "Lolly", img: "Dog15.jpg", Price : "₦100,000", url:"15Lolly.html" }
+              ];
+    
+                 var str = ""
+                 text.map((e, i) => {
+                 str +="<div id='mainCard' onclick='display()'>" + 
+                 "<p class='dogname'><b>" + e.name + "</b></p>" +
+                 "<p class='price'><b>" + e.Price + "</b></p>" +
+                 "<a href="+ e.url +"> <img src=" + e.img +" alt='Avatar' /> </a>" +
+                 "</div>";
+                 });
+                 document.getElementById("categories").innerHTML = str; 
+    
+    </script>
+
+
+  </body>
+</html>

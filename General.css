@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-top: 1%;
+  width: 90%;
+  margin-left: 5%;
+  justify-content: space-between;
+  border-bottom-style: groove;
+  border-bottom-color: rgb(253, 211, 95);
+  border-top-style: groove;
+  border-top-color: rgb(253, 211, 95);
+  border-left-style: groove;
+  border-left-color: rgb(253, 211, 95);
+  border-right-style: groove;
+  border-right-color: rgb(253, 211, 95);
+}
+
+.header-right {
+  margin-left: 3%;
+  margin-top: 9px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.name {
+  position: absolute;
+  margin-left: 105px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-top: 9px;
+  color: rgb(253, 211, 95);
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-left a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 3px;
+  margin-right: 40px;
+}
+
+.header-left a:hover {
+  font-size: 19px;
+}
+
+.container {
+  display: flex;
+  background-color:transparent;
+  width: 95%;
+  height: 680px;
+  margin-left: 2.5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#Myimg {
+  height: 600px;
+  width: 69%;
+  margin-left: 2.7%;
+  margin-top: 40px;
+  border-radius: 5px;
+  background-color:transparent;
+}
+
+
+
+.imgdog{
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+
+.mainCard {
+  margin-top: 40px;
+  margin-right: 2.3%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 600px;
+  width: 350px;
+}
+
+.Card {
+  width: 300px;
+  height: 550px;
+  margin-left: 20px;
+}
+
+.Card li {
+  list-style: none;
+  line-height: 4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.Allfooter {
+  height: 70px;
+  background-color: #1234;
+  margin-top: 50px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.foot {
+  margin-top: 30px;
+}
+
+.Privacy {
+  text-decoration: none;
+  color: tomato;
+}
+
+.Terms {
+  text-decoration: none;
+  color: tomato;
+}
+
+@media screen and (max-width: 420px) {
+  .name {
+    display: none;
+  }
+  .header-left a {
+    font-weight: 300px;
+    font-size: 15px;
+    padding: 1px;
+    margin-right: 20px;
+  }
+
+  
+  .container {
+    width: 95%;
+    height: 780px;
+  }
+  
+  #Myimg {
+    height: 300px;
+    width: 100%;
+  }
+
+  .imgdog{
+    width: 100%;
+    height: 300px;
+  }
+  
+  .mainCard {
+    margin-top: 5px;
+    height: 390px;
+    width: 100%;
+    margin-left: 2.3%;
+  }
+  
+  .Card {
+    width: 70%;
+    height: 390px;
+  }
+
+  .Card li {
+    list-style: none;
+    line-height: 2.9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .Allfooter {
+    height: 77px;
+  }
+  
+  .foot {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .name {
+    margin-left: 77px;
+    font-size: 20px;
+    margin-top: 4px;
+  }
+
+  .header-left a {
+    font-size: 15px;
+    padding: 1px;
+    margin-right: 20px;
+  }
+
+  .container {
+    width: 95%;
+    height: 780px;
+  }
+  
+  #Myimg {
+    height: 300px;
+    width: 100%;
+  }
+
+  .imgdog{
+    width: 100%;
+    height: 300px;
+  }
+  
+  .mainCard {
+    margin-top: 5px;
+    height: 350px;
+    width: 100%;
+    margin-left: 2.3%;
+  }
+  
+  .Card {
+    width: 70%;
+    height: 340px;
+  }
+
+  .Card li {
+    list-style: none;
+    line-height: 2.9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .Allfooter {
+    height: 10px;
+    background-color: #1234;
+    margin-top: 50px;
+  }
+  
+  .footer {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .foot {
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  .name {
+    margin-left: 86px;
+     }
+
+  .container {
+    width: 95%;
+    height: 400px;
+  }
+  
+  #Myimg {
+    height: 375px;
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .imgdog{
+    width: 100%;
+    height: 375px;
+  }
+  
+  .mainCard {
+    margin-top: 9px;
+    height: 375px;
+    width: 40%;
+    margin-left: 2.3%;
+  }
+  
+  .Card {
+    width: 70%;
+    height: 375px;
+    
+  }
+
+  .Card li {
+    list-style: none;
+    line-height: 2.9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .Allfooter {
+    height: 77px;
+  }
+  
+  .foot {
+    margin-top: 20px;
+  }
+}
+
