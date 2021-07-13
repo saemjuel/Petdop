@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 90%;
+  margin: 1% auto auto auto;
+  justify-content: space-between;
+  border-style: groove;
+  border-color: rgb(253, 211, 95);
+}
+
+.header-right {
+  margin-left: 3%;
+  margin-top: 9px;
+}
+
+
+.name {
+  position: absolute;
+  margin-left: 105px;
+  margin-top: 9px;
+}
+
+.logoname {
+  color: rgb(253, 211, 95);
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: -1px;
+  font-weight: bold;
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-left a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 3px;
+  margin-right: 40px;
+}
+
+.header-left a:hover {
+  color: rgb(253, 211, 95);
+}
+
+#categories {
+  width: 85%;
+  min-height: 400px;
+  background-color: transparent;
+  margin-left: 7.5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+p {
+  font-family: century gothic;
+}
+
+.dogname {
+  position: absolute;
+  top: 155px;
+  font-size: 17px;
+  left: 90px;
+  color: #2c3e50;
+}
+
+.price {
+  position: absolute;
+  top: 177px;
+  font-size: 17px;
+  left: 90px;
+  color: #2c3e50;
+}
+
+img {
+  height: 150px;
+  width: 240px;
+  border-radius: 10px;
+}
+
+#mainCard {
+  text-align: center;
+  height: 200px;
+  width: 240px;
+  background-color: white;
+  box-shadow: 10px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 2%;
+  position: relative;
+}
+
+#mainCard:hover {
+  transform: scale(1.10);
+  transition-timing-function: ease-in-out;
+  transition: 2s;
+}
+
+.Allfooter {
+  height: 70px;
+  background-color: #1234;
+  margin-top: 50px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.foot {
+  margin-top: 30px;
+}
+
+.Privacy {
+  text-decoration: none;
+  color: rgb(253, 211, 95);
+}
+
+.Terms {
+  text-decoration: none;
+  color: rgb(253, 211, 95);
+}
+
+/*mobile phone*/
+@media (max-width: 420px) {
+  .name {
+    display: none;
+  }
+  .header-left a {
+    font-size: 15px;
+    padding: 2px;
+    margin-right: 10px;
+  }
+
+  .dogname {
+    top: 100px;
+    font-size: 13px;
+    left: 57px;
+  }
+
+  .price {
+    top: 114px;
+    font-size: 13px;
+    left: 57px;
+  }
+
+  img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  #mainCard {
+    text-align: center;
+    height: 130px;
+    width: 150px;
+  }
+
+  #mainCard:hover {
+    transform: scale(1.02);
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
+
+/*iphone screen */
+@media (min-width: 420px) and (max-width: 600px) {
+  .name {
+    display: none;
+  }
+
+  .header-left a {
+    font-size: 17px;
+    padding: 3px;
+    margin-right: 15px;
+  }
+
+  .dogname {
+    top: 100px;
+    font-size: 13px;
+    left: 57px;
+  }
+
+  .price {
+    top: 114px;
+    font-size: 13px;
+    left: 57px;
+  }
+
+  img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  #mainCard {
+    text-align: center;
+    height: 130px;
+    width: 150px;
+  }
+
+  #mainCard:hover {
+    transform: scale(1.02);
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+  }
+
+  .Allfooter {
+    height: 30px;
+    background-color: #1234;
+    margin-top: 10px;
+  }
+
+  .footer {
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    margin-top: -15px;
+  }
+
+  .foot {
+    margin-top: 10px;
+  }
+}
+
+/* (ipad screen) */
+@media (min-width: 600px) and (max-width: 1100px) {
+  
+  .name {
+    margin-left: 89px;
+    margin-top: 2px;
+  }
+  
+  #categories {
+    margin-bottom: 1%;
+  }
+
+  .dogname {
+    top: 100px;
+    font-size: 13px;
+    left: 57px;
+  }
+
+  .price {
+    top: 114px;
+    font-size: 13px;
+    left: 57px;
+  }
+
+  img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  #mainCard {
+    text-align: center;
+    height: 130px;
+    width: 150px;
+   
+  }
+
+  .Allfooter {
+    height: 30px;
+    background-color: #1234;
+    margin-top: 10px;
+  }
+
+  .footer {
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    margin-top: -15px;
+  }
+
+  .foot {
+    margin-top: 10px;
+  }
+}

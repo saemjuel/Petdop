@@ -5,25 +5,17 @@
   }
   body{
     background: black
-    /*background:rgb(255,251,249);*/
   }
   
   .header{
     display: flex;
     align-items: center;
     background: white;
-    margin-top: 1%;
     width: 90%;
-    margin-left: 5%;
+    margin: 1% auto auto auto;
     justify-content: space-between;
-    border-bottom-style: groove;
-    border-bottom-color: rgb(253, 211, 95);
-    border-top-style: groove;
-    border-top-color: rgb(253, 211, 95);
-    border-left-style: groove;
-    border-left-color: rgb(253, 211, 95);
-    border-right-style: groove;
-    border-right-color: rgb(253, 211, 95);
+    border-style: groove;
+    border-color: rgb(253, 211, 95);
   }
   
   .header-right .petdop{
@@ -31,57 +23,45 @@
     margin-top: 9px;
   }
   
-  .header-right a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-  }
-  
   .name{
     position: absolute;
     margin-left: 105px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;  
-    font-size: 25px;
-    margin-top: 9px;
-    color: rgb(253, 211, 95);
-    
+    margin-top: 9px;  
   }
   
   .logoname{
     color:rgb(253, 211, 95);
-    font-size:25px ;
+    font-size:25px;
     font-family:'Roboto', sans-serif; 
     margin-left: -1px;
+    font-weight: bold;
   }
-  
-   
+
+  .header-left {
+    display: flex;
+  }
+
   .header-left a{
     text-decoration: none;
     color: black;
     font-weight: 300px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-     padding: 3px; 
-     margin-right: 40px;
-     
+    padding: 3px; 
+    margin-right: 40px; 
   }
   
   .header-left a:hover{
-    font-size: 19px;
+    color: rgb(253, 211, 95);
   }
 
-  .footer{
-    margin-top: -500px;
+  .Allfooter{
     height: 70px;
     background-color: #1234;
     margin-top: 50px;
      }
   
-  
-  .footerr{
+  .footer{
      text-align: center;
      color: white;
      font-size: 15px;
@@ -93,10 +73,180 @@
   
   .Privacy {
      text-decoration: none;
-     color: tomato;
+     color:rgb(253, 211, 95);
   }
   
   .Terms{
      text-decoration: none;
-     color: tomato;
+     color: rgb(253, 211, 95);
   }
+
+  /*mobile screen */
+  @media (max-width: 420px) {
+    .name {
+      display: none;
+    }
+
+    .header-right .petdop {
+      margin-left: 6%;
+      margin-top: 9px;
+    }
+
+    .header-left a {
+      font-size: 15px;
+      padding: 2px;
+      margin-right: 10px;
+    }
+  
+    .dogname {
+      top: 100px;
+      font-size: 13px;
+      left: 57px;
+    }
+  
+    .price {
+      top: 114px;
+      font-size: 13px;
+      left: 57px;
+    }
+  
+    img {
+      height: 100px;
+      width: 150px;
+      border-radius: 10px;
+    }
+  
+    #mainCard {
+      text-align: center;
+      height: 130px;
+      width: 150px;
+    }
+  
+    #mainCard:hover {
+      transform: scale(1.02);
+      transition-timing-function: ease-in-out;
+      transition: 2s;
+    }
+  
+    .footer {
+      font-size: 10px;
+    }
+  }
+  
+  /*iphone screen */
+  @media (min-width: 420px) and (max-width: 600px) {
+    .name {
+      display: none;
+    }
+  
+    .header-left a {
+      font-size: 17px;
+      padding: 3px;
+      margin-right: 15px;
+    }
+  
+    .dogname {
+      top: 100px;
+      font-size: 13px;
+      left: 57px;
+    }
+  
+    .price {
+      top: 114px;
+      font-size: 13px;
+      left: 57px;
+    }
+  
+    img {
+      height: 100px;
+      width: 150px;
+      border-radius: 10px;
+    }
+  
+    #mainCard {
+      text-align: center;
+      height: 130px;
+      width: 150px;
+    }
+  
+    #mainCard:hover {
+      transform: scale(1.02);
+      transition-timing-function: ease-in-out;
+      transition: 2s;
+    }
+  
+    .Allfooter {
+      height: 30px;
+      background-color: #1234;
+      margin-top: 10px;
+    }
+  
+    .footer {
+      text-align: center;
+      color: white;
+      font-size: 11px;
+      margin-top: -15px;
+    }
+  
+    .foot {
+      margin-top: 10px;
+    }
+  }
+
+  /* (ipad screen) */
+  @media (min-width: 600px) and (max-width: 1100px) {
+    
+    .name {
+      position: absolute;
+      margin-left: 89px;
+      margin-top: 2px;
+    }
+    
+    #categories {
+      margin-bottom: 1%;
+    }
+  
+    .dogname {
+      top: 100px;
+      font-size: 13px;
+      left: 57px;
+    }
+  
+    .price {
+      top: 114px;
+      font-size: 13px;
+      left: 57px;
+    }
+  
+    img {
+      height: 100px;
+      width: 150px;
+      border-radius: 10px;
+    }
+  
+    #mainCard {
+      text-align: center;
+      height: 130px;
+      width: 150px;
+     
+    }
+  
+    .Allfooter {
+      height: 30px;
+      background-color: #1234;
+      margin-top: 10px;
+    }
+  
+    .footer {
+      text-align: center;
+      color: white;
+      font-size: 11px;
+      margin-top: -15px;
+    }
+  
+    .foot {
+      margin-top: 10px;
+    }
+  }
+  
+  
