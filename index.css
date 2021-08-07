@@ -10,51 +10,56 @@ body {
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  background: white;
-  width: 90%;
-  margin: 1% auto auto auto;
-  justify-content: space-between;
+  background: white; 
   border-style: groove;
   border-color: rgb(253, 211, 95);
 }
 
-.header-right {
-  margin-left: 3%;
-  margin-top: 9px;
+.header-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 90% !important;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.header-left .petdop {
+ height: 50px;
+ width: 40px;
+}
 
 .name {
   position: absolute;
-  margin-left: 105px;
-  margin-top: 9px;
+  margin: 0px 40px;
+}
+
+.name a{
+  text-decoration: none;
 }
 
 .logoname {
   color: rgb(253, 211, 95);
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
-  margin-left: -1px;
   font-weight: bold;
 }
 
-.header-left {
+.header-right {
   display: flex;
 }
 
-.header-left a {
+.header-right a {
   text-decoration: none;
   color: black;
   font-weight: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding: 3px;
-  margin-right: 40px;
+  margin: 0px 40px 0px 0px;
 }
 
-.header-left a:hover {
+.header-right a:hover {
   color: rgb(253, 211, 95);
 }
 
@@ -67,6 +72,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  margin-top: 2rem !important
 }
 
 p {
@@ -121,12 +127,9 @@ img {
 .footer {
   text-align: center;
   color: white;
-  font-size: 15px;
+  font-size: 16px;
 }
 
-.foot {
-  margin-top: 30px;
-}
 
 .Privacy {
   text-decoration: none;
@@ -143,10 +146,9 @@ img {
   .name {
     display: none;
   }
-  .header-left a {
+  .header-right a {
     font-size: 15px;
-    padding: 2px;
-    margin-right: 10px;
+    margin: 0px 10px 0px 0px;
   }
 
   .dogname {
@@ -180,7 +182,7 @@ img {
   }
 
   .footer {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -190,10 +192,8 @@ img {
     display: none;
   }
 
-  .header-left a {
-    font-size: 17px;
-    padding: 3px;
-    margin-right: 15px;
+  .header-right a {
+    margin: 0px 20px 0px 0px;
   }
 
   .dogname {
@@ -226,35 +226,14 @@ img {
     transition: 2s;
   }
 
-  .Allfooter {
-    height: 30px;
-    background-color: #1234;
-    margin-top: 10px;
-  }
-
   .footer {
-    text-align: center;
-    color: white;
-    font-size: 11px;
-    margin-top: -15px;
-  }
-
-  .foot {
-    margin-top: 10px;
+    font-size: 12px
   }
 }
 
 /* (ipad screen) */
 @media (min-width: 600px) and (max-width: 1100px) {
   
-  .name {
-    margin-left: 89px;
-    margin-top: 2px;
-  }
-  
-  #categories {
-    margin-bottom: 1%;
-  }
 
   .dogname {
     top: 100px;
@@ -280,21 +259,9 @@ img {
     width: 150px;
    
   }
-
-  .Allfooter {
-    height: 30px;
-    background-color: #1234;
-    margin-top: 10px;
-  }
-
   .footer {
-    text-align: center;
-    color: white;
-    font-size: 11px;
-    margin-top: -15px;
+    font-size: 14px;
+ }
   }
-
-  .foot {
-    margin-top: 10px;
-  }
-}
+ /* (ipad screen) */
+  /*@media (min-width: 600px) and (max-width: 1100px) {
