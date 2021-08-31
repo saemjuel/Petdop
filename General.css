@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: black;
+  /* background-color: black; */
 }
 
 .header {
@@ -27,19 +27,29 @@ body {
   width: 40px;
 }
 
-.name {
-  position: absolute;
-  margin: 0px 40px ;
-}
-
-.name a{
+.header-left a{
   text-decoration: none;
 }
+
+.logo-cont {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+/*.name {
+  position: absolute;
+  margin: 0px 40px;
+}
+
+.name a {
+  text-decoration: none;
+}*/
 
 .logoname {
   color: rgb(253, 211, 95);
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -63,50 +73,60 @@ body {
 
 .container {
   display: flex;
-  background-color:transparent;
-  width: 95%;
+  background-color: transparent;
+  /* width: 95%; */
   height: 680px;
   margin-left: 2.5%;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  /* justify-content: space-between;
+  flex-wrap: wrap; */
   margin-top: 10px;
 }
 
+.pet-d-cont {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  height: 400px;
+}
+
 #Myimg {
-  height: 600px;
   width: 69%;
+  /* height: 600px;
+  
   margin-left: 2.7%;
   margin-top: 40px;
   border-radius: 5px;
-  background-color:transparent;
+  background-color: transparent; */
 }
 
-.imgdog{
+.imgdog {
   width: 100%;
-  height: 600px;
-  border-radius: 5px;
+  height: 100%;
+  /* height: 600px;
+  border-radius: 5px; */
 }
 
 .mainCard {
-  margin-top: 40px;
+  /* margin-top: 40px;
   margin-right: 2.3%;
-  background-color: whitesmoke;
   border-radius: 5px;
-  height: 600px;
-  width: 350px;
+  height: 600px;*/
+  width: 31%;
+  background-color: whitesmoke;
 }
 
 .Card {
-  width: 300px;
-  height: 550px;
+  /* width: 300px;
+  height: 550px; */
   margin-left: 20px;
 }
 
 .Card li {
   list-style: none;
-  line-height: 4;
+  line-height: 2;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 17px;
 }
 
@@ -133,7 +153,7 @@ body {
 
 .Terms {
   text-decoration: none;
-  color:rgb(253, 211, 95);
+  color: rgb(253, 211, 95);
 }
 
 /*mobile screen */
@@ -150,24 +170,24 @@ body {
     width: 95%;
     height: 780px;
   }
-  
+
   #Myimg {
     height: 300px;
     width: 97%;
   }
 
-  .imgdog{
+  .imgdog {
     width: 97%;
     height: 300px;
   }
-  
+
   .mainCard {
     margin-top: 5px;
     height: 390px;
     width: 100%;
     margin-left: 2.3%;
   }
-  
+
   .Card {
     width: 70%;
     height: 390px;
@@ -180,44 +200,41 @@ body {
     font-weight: bold;
     font-size: 14px;
   }
-  
-  
-} 
+}
 
 /*iphone screen */
 
-@media (min-width:420px) and (max-width: 600px) {
-  
+@media (min-width: 420px) and (max-width: 600px) {
   .name {
     display: none;
-   }
+  }
 
-   .header-right a {
-    margin:0px 20px 0px 0px;
+  .header-right a {
+    margin: 0px 20px 0px 0px;
   }
 
   .container {
     width: 95%;
     height: 780px;
   }
-  
+
   #Myimg {
     height: 300px;
     width: 97%;
   }
 
-  .imgdog{
+  .imgdog {
     width: 97%;
     height: 300px;
   }
-  
+
   .mainCard {
     margin-top: 5px;
     height: 350px;
     width: 100%;
     margin-left: 2.3%;
   }
-  
+
   .Card {
     width: 70%;
     height: 340px;
@@ -230,40 +247,36 @@ body {
     font-weight: bold;
     font-size: 14px;
   }
-  
+}
 
-   }
-
-/* (ipad screen)  */ 
-@media (min-width:600px) and (max-width: 1100px) {
-
+/* (ipad screen)  */
+@media (min-width: 600px) and (max-width: 1100px) {
   .container {
     width: 95%;
     height: 400px;
   }
-  
+
   #Myimg {
     height: 375px;
     width: 50%;
     margin-top: 10px;
   }
 
-  .imgdog{
+  .imgdog {
     width: 100%;
     height: 375px;
   }
-  
+
   .mainCard {
     margin-top: 9px;
     height: 375px;
     width: 40%;
     margin-left: 2.3%;
   }
-  
+
   .Card {
     width: 70%;
     height: 375px;
-    
   }
 
   .Card li {
@@ -273,5 +286,4 @@ body {
     font-weight: bold;
     font-size: 14px;
   }
-  
- }
+}
