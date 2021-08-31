@@ -1,77 +1,164 @@
-g<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title> Petdop </title>
-    <link rel="shortcut icon" href="petdop.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Petdop</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
   </head>
- <body>
-   <div class="header">
-     <div class="header-container">
-       <div class="header-left">
-        <a href="index.html"><img class="petdop" src="petdop.jpg" alt="Petdop" > </a> 
-       </div>
-       <div class="name"> <a href="index.html"> </a><p class="logoname">Petdop</p> </a> </div>  
-         
-       <div class="header-right">
-         <a href="index.html"> Home </a>
-         <a href="About.html"> About</a>
-         <a href="Blog.html"> Blogs</a>
-       </div>
-      </div>
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <div class="header-left">
+          <a class="logo-cont" href="index.html">
+            <img class="petdop" src="logo.jpg" alt="Petdop" />
+            <h3 class="logoname">Petdop</h3>
+          </a>
+        </div>
 
+        <div class="header-right">
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About</a>
+          <a href="blog.html"> Blogs</a>
+        </div>
+      </div>
     </div>
 
-     <div id="categories"> </div>
-     
-     <footer>
-       <div class="Allfooter">
-          <div class="Foot">  
-            <br>
-           <p class="footer"> © 2021 Petdop, Inc.  |  Phone: 08093727218   |  Address: 50 Iron Point Circle, Suite 140, Petdop, CA 95630  <br />
-           Read our <a class="Privacy" href=""> Privacy Policy </a>  | Petdop <a class="Terms" href=""> Terms of Service </a>  </p>
-         </div>
+    <div id="categories"></div>
 
+    <footer>
+      <div class="Allfooter">
+        <div class="Foot">
+          <br />
+          <p class="footer">
+            © 2021 Petdop, Inc. | Phone: 08093727218 | Address: 50 Iron Point
+            Circle, Suite 140, Petdop, CA 95630 <br />
+            Read our <a class="Privacy" href=""> Privacy Policy </a> | Petdop
+            <a class="Terms" href=""> Terms of Service </a>
+          </p>
         </div>
-      </footer>
-  
+      </div>
+    </footer>
 
-   <script>
-     var text =[{ name: "Lucky", img: "Dog1.jpg", Price : "₦65,000", url: "1Lucky.html"},
-                { name: "Mr White", img: "Dog2.jpg", Price : "₦100,000", url: "2MrWhite.html"},
-                { name: "Slimy", img: "Dog3.jpg ", Price : "₦90,000", url: "3Slimy.html"},
-                { name: "Dee Dee", img: "Dog4.jpg", Price : "₦30,000", url:"4DeeDee.html" },
-                { name: "Doman", img: "Dog5.jpg", Price : "₦150,000", url:"5Doman.html" },
-                { name: "Great", img: "Dog6.jpg", Price : "₦35,000 ", url:"6Great.html" },
-                { name: "Rotfull", img: "Dog7.jpg", Price : "₦50,000", url:"7Rotull.html" },
-                { name: "Buller", img:  "Dog8.jpg", Price : "₦70,000", url:"8Buller.html" },
-                { name: "Accura", img: "Dog9.jpg", Price : "₦ 50,000", url:"9Accura.html" },
-                { name: "Smith", img: "Dog10.jpg", Price : "₦120,000", url:"10Smith.html" },
-                { name: "Black", img: "Dog11.jpg", Price : "₦45,000", url:"11Black.html" },
-                { name: "Dodge", img:  "Dog12.jpeg", Price : "₦30,000", url:"12Dodge.html" },
-                { name: "Mozzy", img: "Dog13.jpg", Price : "₦80,000", url:"13Mozzy.html" },
-                { name: "Tane", img: "Dog14.jpg", Price : "₦50,000", url:"14Tane.html" },
-                { name: "Lolly", img: "Dog15.jpg", Price : "₦100,000", url:"15Lolly.html" }
-              ];
-    
-                 var str = ""
-                 text.map((e, i) => {
-                 str +="<div id='mainCard' onclick='display()'>" + 
-                 "<p class='dogname'><b>" + e.name + "</b></p>" +
-                 "<p class='price'><b>" + e.Price + "</b></p>" +
-                 "<a href="+ e.url +"> <img src=" + e.img +" alt='Avatar' /> </a>" +
-                 "</div>";
-                 });
-                 document.getElementById("categories").innerHTML = str; 
-    
+    <script>
+      var text = [
+        {
+          name: "Lucky",
+          img: "images/Dog1.jpg",
+          Price: "₦65,000",
+          url: "petdetails/lucky.html",
+        },
+        {
+          name: "Mr White",
+          img: "images/Dog2.jpg",
+          Price: "₦100,000",
+          url: "petdetails/mrwhite.html",
+        },
+        {
+          name: "Slimy",
+          img: "images/Dog3.jpg ",
+          Price: "₦90,000",
+          url: "petdetails/slimy.html",
+        },
+        {
+          name: "Dee Dee",
+          img: "images/Dog4.jpg",
+          Price: "₦30,000",
+          url: "petdetails/deedee.html",
+        },
+        {
+          name: "Doman",
+          img: "images/Dog5.jpg",
+          Price: "₦150,000",
+          url: "petdetails/doman.html",
+        },
+        {
+          name: "Great",
+          img: "images/Dog6.jpg",
+          Price: "₦35,000 ",
+          url: "petdetails/great.html",
+        },
+        {
+          name: "Rotfull",
+          img: "images/Dog7.jpg",
+          Price: "₦50,000",
+          url: "petdetails/rotull.html",
+        },
+        {
+          name: "Buller",
+          img: "images/Dog8.jpg",
+          Price: "₦70,000",
+          url: "petdetails/buller.html",
+        },
+        {
+          name: "Accura",
+          img: "images/Dog9.jpg",
+          Price: "₦ 50,000",
+          url: "petdetails/accura.html",
+        },
+        {
+          name: "Smith",
+          img: "images/Dog10.jpg",
+          Price: "₦120,000",
+          url: "petdetails/smith.html",
+        },
+        {
+          name: "Black",
+          img: "images/Dog11.jpg",
+          Price: "₦45,000",
+          url: "petdetails/black.html",
+        },
+        {
+          name: "Dodge",
+          img: "images/Dog12.jpeg",
+          Price: "₦30,000",
+          url: "petdetails/dodge.html",
+        },
+        {
+          name: "Mozzy",
+          img: "images/Dog13.jpg",
+          Price: "₦80,000",
+          url: "petdetails/mozzy.html",
+        },
+        {
+          name: "Tane",
+          img: "images/Dog14.jpg",
+          Price: "₦50,000",
+          url: "petdetails/tane.html",
+        },
+        {
+          name: "Lolly",
+          img: "images/Dog15.jpg",
+          Price: "₦100,000",
+          url: "petdetails/lolly.html",
+        },
+      ];
+
+      var str = "";
+      text.map((e, i) => {
+        str +=
+          "<div id='mainCard' onclick='display()'>" +
+          "<p class='dogname'><b>" +
+          e.name +
+          "</b></p>" +
+          "<p class='price'><b>" +
+          e.Price +
+          "</b></p>" +
+          "<a href=" +
+          e.url +
+          "> <img src=" +
+          e.img +
+          " alt='Avatar' /> </a>" +
+          "</div>";
+      });
+      document.getElementById("categories").innerHTML = str;
     </script>
-
-
   </body>
 </html>
