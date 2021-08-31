@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
 }
 
-body {
-  background: black;
+ body {
+  /* background: black; */
 }
 
 .header {
-  background: white; 
+  background: white;
   border-style: groove;
   border-color: rgb(253, 211, 95);
 }
@@ -25,23 +25,34 @@ body {
 }
 
 .header-left .petdop {
- height: 50px;
- width: 40px;
+  height: 50px;
+  width: 40px;
+  margin-right: 0.5rem;
 }
 
-.name {
+.header-left a{
+  text-decoration: none;
+}
+
+.logo-cont {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+/*.name {
   position: absolute;
   margin: 0px 40px;
 }
 
-.name a{
+.name a {
   text-decoration: none;
-}
+}*/
 
 .logoname {
   color: rgb(253, 211, 95);
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -51,7 +62,7 @@ body {
 
 .header-right a {
   text-decoration: none;
-  color: black;
+  color: #2c3e50;
   font-weight: 300px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -72,7 +83,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 2rem !important
+  margin-top: 2rem !important;
 }
 
 p {
@@ -113,7 +124,7 @@ img {
 }
 
 #mainCard:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
   transition-timing-function: ease-in-out;
   transition: 2s;
 }
@@ -126,10 +137,9 @@ img {
 
 .footer {
   text-align: center;
-  color: white;
+  color: black;
   font-size: 16px;
 }
-
 
 .Privacy {
   text-decoration: none;
@@ -227,14 +237,12 @@ img {
   }
 
   .footer {
-    font-size: 12px
+    font-size: 12px;
   }
 }
 
 /* (ipad screen) */
 @media (min-width: 600px) and (max-width: 1100px) {
-  
-
   .dogname {
     top: 100px;
     font-size: 13px;
@@ -257,11 +265,11 @@ img {
     text-align: center;
     height: 130px;
     width: 150px;
-   
   }
   .footer {
     font-size: 14px;
- }
   }
- /* (ipad screen) */
-  /*@media (min-width: 600px) and (max-width: 1100px) {
+}
+
+
+
